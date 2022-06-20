@@ -7,9 +7,12 @@
 
 import Foundation
 
-class Piece: ExpressibleByStringLiteral {
+class Piece: ExpressibleByStringLiteral, CustomStringConvertible, Hashable {
     var type: PieceType
     var color: PieceColor
+    var description: String {
+        return "type: \(type), color: \(color), symbol: \(type.symbol(color: color))"
+    }
 
     init(type: PieceType, color: PieceColor) {
         self.type = type
@@ -18,28 +21,37 @@ class Piece: ExpressibleByStringLiteral {
 
     required init(stringLiteral: String) {
         self.type = .none
+        let unicodeScalars = stringLiteral.unicodeScalars
+        let unicode = unicodeScalars[unicodeScalars.startIndex].value
 
-        if stringLiteral <= "\u{2659}" {
+        if unicode <= 0x2659 {
             // white
             self.color = .white
-            self.type = PieceType(rawValue: stringLiteral) ?? .none
+            self.type = PieceType(rawValue: Int(unicode)) ?? .none
         } else {
             // black
             self.color = .black
-            if let value = Int(stringLiteral) {
-                self.type = PieceType(rawValue: String(value - 6)) ?? .none
-            }
+            self.type = PieceType(rawValue: Int(unicode - 6)) ?? .none
         }
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(type)
+        hasher.combine(color)
+    }
+
+    static func ==(lhs: Piece, rhs: Piece) -> Bool {
+        lhs.type == rhs.type && lhs.color == rhs.color
     }
 }
 
-enum PieceType: String {
-    case pawn = "\u{2659}"
-    case bishop = "\u{2658}"
-    case knight = "\u{2657}"
-    case luke = "\u{2656}"
-    case queen = "\u{2655}"
-    case none = ""
+enum PieceType: Int {
+    case pawn = 0x2659
+    case knight = 0x2658
+    case bishop = 0x2657
+    case luke = 0x2656
+    case queen = 0x2655
+    case none = 0
 
     var score: Int {
         switch self {
@@ -57,12 +69,15 @@ enum PieceType: String {
     }
 
     var whiteSymbol: String {
-        return self.rawValue
+        if let unicodeScalar = UnicodeScalar(self.rawValue) {
+            return String(unicodeScalar)
+        }
+        return ""
     }
 
     var blackSymbol: String {
-        if let value = Int(self.rawValue) {
-            return String(value + 6)
+        if let unicodeScalar = UnicodeScalar(self.rawValue + 6) {
+            return String(unicodeScalar)
         }
         return ""
     }
