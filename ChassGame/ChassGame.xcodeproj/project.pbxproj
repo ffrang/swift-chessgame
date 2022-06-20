@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A12C774E28604A6900D8C648 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C774D28604A6900D8C648 /* AppDelegate.swift */; };
+		A12C775028604A6900D8C648 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C774F28604A6900D8C648 /* SceneDelegate.swift */; };
+		A12C775228604A6900D8C648 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C775128604A6900D8C648 /* ViewController.swift */; };
+		A12C775528604A6900D8C648 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12C775328604A6900D8C648 /* Main.storyboard */; };
+		A12C775828604A6900D8C648 /* ChassGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A12C775628604A6900D8C648 /* ChassGame.xcdatamodeld */; };
+		A12C775A28604A6B00D8C648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A12C775928604A6B00D8C648 /* Assets.xcassets */; };
+		A12C775D28604A6B00D8C648 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12C775B28604A6B00D8C648 /* LaunchScreen.storyboard */; };
+		A12C776828604A6B00D8C648 /* ChassGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C776728604A6B00D8C648 /* ChassGameTests.swift */; };
+		A12C777228604A6B00D8C648 /* ChassGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C777128604A6B00D8C648 /* ChassGameUITests.swift */; };
+		A12C777428604A6B00D8C648 /* ChassGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C777328604A6B00D8C648 /* ChassGameUITestsLaunchTests.swift */; };
+		A12C778128604B1300D8C648 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C778028604B1300D8C648 /* Board.swift */; };
+		A12C778328604B3B00D8C648 /* Pawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C778228604B3B00D8C648 /* Pawn.swift */; };
+		A12C778528604BEA00D8C648 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C778428604BEA00D8C648 /* Piece.swift */; };
+		A12C778828604D3F00D8C648 /* Bishop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C778728604D3F00D8C648 /* Bishop.swift */; };
+		A12C778A28604D4700D8C648 /* Luke.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C778928604D4700D8C648 /* Luke.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A12C776428604A6B00D8C648 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A12C774228604A6900D8C648 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A12C774928604A6900D8C648;
+			remoteInfo = ChassGame;
+		};
+		A12C776E28604A6B00D8C648 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A12C774228604A6900D8C648 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A12C774928604A6900D8C648;
+			remoteInfo = ChassGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A12C774A28604A6900D8C648 /* ChassGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChassGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12C774D28604A6900D8C648 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A12C774F28604A6900D8C648 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A12C775128604A6900D8C648 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A12C775428604A6900D8C648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A12C775728604A6900D8C648 /* ChassGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChassGame.xcdatamodel; sourceTree = "<group>"; };
+		A12C775928604A6B00D8C648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A12C775C28604A6B00D8C648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A12C775E28604A6B00D8C648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A12C776328604A6B00D8C648 /* ChassGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChassGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12C776728604A6B00D8C648 /* ChassGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChassGameTests.swift; sourceTree = "<group>"; };
+		A12C776D28604A6B00D8C648 /* ChassGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChassGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12C777128604A6B00D8C648 /* ChassGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChassGameUITests.swift; sourceTree = "<group>"; };
+		A12C777328604A6B00D8C648 /* ChassGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChassGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A12C778028604B1300D8C648 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		A12C778228604B3B00D8C648 /* Pawn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pawn.swift; sourceTree = "<group>"; };
+		A12C778428604BEA00D8C648 /* Piece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piece.swift; sourceTree = "<group>"; };
+		A12C778728604D3F00D8C648 /* Bishop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bishop.swift; sourceTree = "<group>"; };
+		A12C778928604D4700D8C648 /* Luke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Luke.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A12C774728604A6900D8C648 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12C776028604A6B00D8C648 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12C776A28604A6B00D8C648 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A12C774128604A6900D8C648 = {
+			isa = PBXGroup;
+			children = (
+				A12C774C28604A6900D8C648 /* ChassGame */,
+				A12C776628604A6B00D8C648 /* ChassGameTests */,
+				A12C777028604A6B00D8C648 /* ChassGameUITests */,
+				A12C774B28604A6900D8C648 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A12C774B28604A6900D8C648 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A12C774A28604A6900D8C648 /* ChassGame.app */,
+				A12C776328604A6B00D8C648 /* ChassGameTests.xctest */,
+				A12C776D28604A6B00D8C648 /* ChassGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A12C774C28604A6900D8C648 /* ChassGame */ = {
+			isa = PBXGroup;
+			children = (
+				A12C778628604C8000D8C648 /* Model */,
+				A12C774D28604A6900D8C648 /* AppDelegate.swift */,
+				A12C774F28604A6900D8C648 /* SceneDelegate.swift */,
+				A12C775128604A6900D8C648 /* ViewController.swift */,
+				A12C775328604A6900D8C648 /* Main.storyboard */,
+				A12C775928604A6B00D8C648 /* Assets.xcassets */,
+				A12C775B28604A6B00D8C648 /* LaunchScreen.storyboard */,
+				A12C775E28604A6B00D8C648 /* Info.plist */,
+				A12C775628604A6900D8C648 /* ChassGame.xcdatamodeld */,
+				A12C778028604B1300D8C648 /* Board.swift */,
+			);
+			path = ChassGame;
+			sourceTree = "<group>";
+		};
+		A12C776628604A6B00D8C648 /* ChassGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				A12C776728604A6B00D8C648 /* ChassGameTests.swift */,
+			);
+			path = ChassGameTests;
+			sourceTree = "<group>";
+		};
+		A12C777028604A6B00D8C648 /* ChassGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A12C777128604A6B00D8C648 /* ChassGameUITests.swift */,
+				A12C777328604A6B00D8C648 /* ChassGameUITestsLaunchTests.swift */,
+			);
+			path = ChassGameUITests;
+			sourceTree = "<group>";
+		};
+		A12C778628604C8000D8C648 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A12C778428604BEA00D8C648 /* Piece.swift */,
+				A12C778228604B3B00D8C648 /* Pawn.swift */,
+				A12C778728604D3F00D8C648 /* Bishop.swift */,
+				A12C778928604D4700D8C648 /* Luke.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A12C774928604A6900D8C648 /* ChassGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A12C777728604A6B00D8C648 /* Build configuration list for PBXNativeTarget "ChassGame" */;
+			buildPhases = (
+				A12C774628604A6900D8C648 /* Sources */,
+				A12C774728604A6900D8C648 /* Frameworks */,
+				A12C774828604A6900D8C648 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChassGame;
+			productName = ChassGame;
+			productReference = A12C774A28604A6900D8C648 /* ChassGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A12C776228604A6B00D8C648 /* ChassGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A12C777A28604A6B00D8C648 /* Build configuration list for PBXNativeTarget "ChassGameTests" */;
+			buildPhases = (
+				A12C775F28604A6B00D8C648 /* Sources */,
+				A12C776028604A6B00D8C648 /* Frameworks */,
+				A12C776128604A6B00D8C648 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A12C776528604A6B00D8C648 /* PBXTargetDependency */,
+			);
+			name = ChassGameTests;
+			productName = ChassGameTests;
+			productReference = A12C776328604A6B00D8C648 /* ChassGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A12C776C28604A6B00D8C648 /* ChassGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A12C777D28604A6B00D8C648 /* Build configuration list for PBXNativeTarget "ChassGameUITests" */;
+			buildPhases = (
+				A12C776928604A6B00D8C648 /* Sources */,
+				A12C776A28604A6B00D8C648 /* Frameworks */,
+				A12C776B28604A6B00D8C648 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A12C776F28604A6B00D8C648 /* PBXTargetDependency */,
+			);
+			name = ChassGameUITests;
+			productName = ChassGameUITests;
+			productReference = A12C776D28604A6B00D8C648 /* ChassGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A12C774228604A6900D8C648 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					A12C774928604A6900D8C648 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					A12C776228604A6B00D8C648 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = A12C774928604A6900D8C648;
+					};
+					A12C776C28604A6B00D8C648 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = A12C774928604A6900D8C648;
+					};
+				};
+			};
+			buildConfigurationList = A12C774528604A6900D8C648 /* Build configuration list for PBXProject "ChassGame" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A12C774128604A6900D8C648;
+			productRefGroup = A12C774B28604A6900D8C648 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A12C774928604A6900D8C648 /* ChassGame */,
+				A12C776228604A6B00D8C648 /* ChassGameTests */,
+				A12C776C28604A6B00D8C648 /* ChassGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A12C774828604A6900D8C648 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12C775D28604A6B00D8C648 /* LaunchScreen.storyboard in Resources */,
+				A12C775A28604A6B00D8C648 /* Assets.xcassets in Resources */,
+				A12C775528604A6900D8C648 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12C776128604A6B00D8C648 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12C776B28604A6B00D8C648 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A12C774628604A6900D8C648 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12C775228604A6900D8C648 /* ViewController.swift in Sources */,
+				A12C778528604BEA00D8C648 /* Piece.swift in Sources */,
+				A12C778A28604D4700D8C648 /* Luke.swift in Sources */,
+				A12C778328604B3B00D8C648 /* Pawn.swift in Sources */,
+				A12C774E28604A6900D8C648 /* AppDelegate.swift in Sources */,
+				A12C778828604D3F00D8C648 /* Bishop.swift in Sources */,
+				A12C778128604B1300D8C648 /* Board.swift in Sources */,
+				A12C775828604A6900D8C648 /* ChassGame.xcdatamodeld in Sources */,
+				A12C775028604A6900D8C648 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12C775F28604A6B00D8C648 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12C776828604A6B00D8C648 /* ChassGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12C776928604A6B00D8C648 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12C777228604A6B00D8C648 /* ChassGameUITests.swift in Sources */,
+				A12C777428604A6B00D8C648 /* ChassGameUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A12C776528604A6B00D8C648 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A12C774928604A6900D8C648 /* ChassGame */;
+			targetProxy = A12C776428604A6B00D8C648 /* PBXContainerItemProxy */;
+		};
+		A12C776F28604A6B00D8C648 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A12C774928604A6900D8C648 /* ChassGame */;
+			targetProxy = A12C776E28604A6B00D8C648 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A12C775328604A6900D8C648 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A12C775428604A6900D8C648 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A12C775B28604A6B00D8C648 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A12C775C28604A6B00D8C648 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A12C777528604A6B00D8C648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A12C777628604A6B00D8C648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A12C777828604A6B00D8C648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChassGame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kakao.ChassGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A12C777928604A6B00D8C648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChassGame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kakao.ChassGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A12C777B28604A6B00D8C648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kakao.ChassGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChassGame.app/ChassGame";
+			};
+			name = Debug;
+		};
+		A12C777C28604A6B00D8C648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kakao.ChassGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChassGame.app/ChassGame";
+			};
+			name = Release;
+		};
+		A12C777E28604A6B00D8C648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kakao.ChassGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChassGame;
+			};
+			name = Debug;
+		};
+		A12C777F28604A6B00D8C648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kakao.ChassGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChassGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A12C774528604A6900D8C648 /* Build configuration list for PBXProject "ChassGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12C777528604A6B00D8C648 /* Debug */,
+				A12C777628604A6B00D8C648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A12C777728604A6B00D8C648 /* Build configuration list for PBXNativeTarget "ChassGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12C777828604A6B00D8C648 /* Debug */,
+				A12C777928604A6B00D8C648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A12C777A28604A6B00D8C648 /* Build configuration list for PBXNativeTarget "ChassGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12C777B28604A6B00D8C648 /* Debug */,
+				A12C777C28604A6B00D8C648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A12C777D28604A6B00D8C648 /* Build configuration list for PBXNativeTarget "ChassGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12C777E28604A6B00D8C648 /* Debug */,
+				A12C777F28604A6B00D8C648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A12C775628604A6900D8C648 /* ChassGame.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A12C775728604A6900D8C648 /* ChassGame.xcdatamodel */,
+			);
+			currentVersion = A12C775728604A6900D8C648 /* ChassGame.xcdatamodel */;
+			path = ChassGame.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A12C774228604A6900D8C648 /* Project object */;
+}
