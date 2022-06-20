@@ -22,6 +22,8 @@
 		A12C778528604BEA00D8C648 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C778428604BEA00D8C648 /* Piece.swift */; };
 		A12C778828604D3F00D8C648 /* Bishop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C778728604D3F00D8C648 /* Bishop.swift */; };
 		A12C778A28604D4700D8C648 /* Luke.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C778928604D4700D8C648 /* Luke.swift */; };
+		A12C778C286086A400D8C648 /* Knight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C778B286086A400D8C648 /* Knight.swift */; };
+		A12C778E286086AE00D8C648 /* Queen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C778D286086AE00D8C648 /* Queen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		A12C778428604BEA00D8C648 /* Piece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piece.swift; sourceTree = "<group>"; };
 		A12C778728604D3F00D8C648 /* Bishop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bishop.swift; sourceTree = "<group>"; };
 		A12C778928604D4700D8C648 /* Luke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Luke.swift; sourceTree = "<group>"; };
+		A12C778B286086A400D8C648 /* Knight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knight.swift; sourceTree = "<group>"; };
+		A12C778D286086AE00D8C648 /* Queen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +124,6 @@
 				A12C775B28604A6B00D8C648 /* LaunchScreen.storyboard */,
 				A12C775E28604A6B00D8C648 /* Info.plist */,
 				A12C775628604A6900D8C648 /* ChassGame.xcdatamodeld */,
-				A12C778028604B1300D8C648 /* Board.swift */,
 			);
 			path = ChassGame;
 			sourceTree = "<group>";
@@ -145,10 +148,13 @@
 		A12C778628604C8000D8C648 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A12C778028604B1300D8C648 /* Board.swift */,
 				A12C778428604BEA00D8C648 /* Piece.swift */,
 				A12C778228604B3B00D8C648 /* Pawn.swift */,
 				A12C778728604D3F00D8C648 /* Bishop.swift */,
 				A12C778928604D4700D8C648 /* Luke.swift */,
+				A12C778B286086A400D8C648 /* Knight.swift */,
+				A12C778D286086AE00D8C648 /* Queen.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -287,7 +293,9 @@
 				A12C775228604A6900D8C648 /* ViewController.swift in Sources */,
 				A12C778528604BEA00D8C648 /* Piece.swift in Sources */,
 				A12C778A28604D4700D8C648 /* Luke.swift in Sources */,
+				A12C778E286086AE00D8C648 /* Queen.swift in Sources */,
 				A12C778328604B3B00D8C648 /* Pawn.swift in Sources */,
+				A12C778C286086A400D8C648 /* Knight.swift in Sources */,
 				A12C774E28604A6900D8C648 /* AppDelegate.swift in Sources */,
 				A12C778828604D3F00D8C648 /* Bishop.swift in Sources */,
 				A12C778128604B1300D8C648 /* Board.swift in Sources */,

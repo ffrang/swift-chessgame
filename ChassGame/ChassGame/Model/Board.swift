@@ -39,10 +39,10 @@ import Foundation
  */
 
 class Board {
-    var ranks: [[Piece?]]?
+    var positions: [[Piece?]]
 
     init() {
-        ranks = [
+        positions = [
             ["♜", "♞", "♝", nil, "♛", "♝", "♞", "♜"],
             ["♟", "♟", "♟", "♟", "♟", "♟", "♟", "♟"],
             [nil, nil, nil, nil, nil, nil, nil, nil],
@@ -52,6 +52,13 @@ class Board {
             ["♙", "♙", "♙", "♙", "♙", "♙", "♙", "♙"],
             ["♖", "♘", "♗", nil, "♕", "♗", "♘", "♖"]
         ]
+
+        print("체스 보드를 초기화했습니다.")
+        display()
+    }
+
+    func display() {
+        
     }
 
 
