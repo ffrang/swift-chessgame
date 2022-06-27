@@ -13,6 +13,18 @@ import Foundation
  */
 
 class Queen: Piece {
-
+    override var moveRuleSet: [StepRule] {
+        let routes = [
+            StepRule(steps: [Step(x: 1, y: 0)], repetable: true),
+            StepRule(steps: [Step(x: -1, y: 0)], repetable: true),
+            StepRule(steps: [Step(x: 0, y: 1)], repetable: true),
+            StepRule(steps: [Step(x: 0, y: -1)],  repetable: true),
+            StepRule(steps: [Step(x: 1, y: 1)], repetable: true),
+            StepRule(steps: [Step(x: 1, y: -1)], repetable: true),
+            StepRule(steps: [Step(x: -1, y: 1)], repetable: true),
+            StepRule(steps: [Step(x: -1, y: -1)],  repetable: true)
+        ]
+        return routes
+    }
 }
 

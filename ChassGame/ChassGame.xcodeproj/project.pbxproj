@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A114C0FF2863D25F00F23A7C /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114C0FE2863D25F00F23A7C /* Route.swift */; };
 		A12C774E28604A6900D8C648 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C774D28604A6900D8C648 /* AppDelegate.swift */; };
 		A12C775028604A6900D8C648 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C774F28604A6900D8C648 /* SceneDelegate.swift */; };
-		A12C775228604A6900D8C648 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C775128604A6900D8C648 /* ViewController.swift */; };
 		A12C775528604A6900D8C648 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12C775328604A6900D8C648 /* Main.storyboard */; };
 		A12C775828604A6900D8C648 /* ChassGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A12C775628604A6900D8C648 /* ChassGame.xcdatamodeld */; };
 		A12C775A28604A6B00D8C648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A12C775928604A6B00D8C648 /* Assets.xcassets */; };
@@ -21,9 +21,18 @@
 		A12C778328604B3B00D8C648 /* Pawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C778228604B3B00D8C648 /* Pawn.swift */; };
 		A12C778528604BEA00D8C648 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C778428604BEA00D8C648 /* Piece.swift */; };
 		A12C778828604D3F00D8C648 /* Bishop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C778728604D3F00D8C648 /* Bishop.swift */; };
-		A12C778A28604D4700D8C648 /* Luke.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C778928604D4700D8C648 /* Luke.swift */; };
+		A12C778A28604D4700D8C648 /* Rook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C778928604D4700D8C648 /* Rook.swift */; };
 		A12C778C286086A400D8C648 /* Knight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C778B286086A400D8C648 /* Knight.swift */; };
 		A12C778E286086AE00D8C648 /* Queen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C778D286086AE00D8C648 /* Queen.swift */; };
+		A12C779D2861372400D8C648 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C779C2861372400D8C648 /* Position.swift */; };
+		A12C77AC28613E1600D8C648 /* GameError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C77AB28613E1600D8C648 /* GameError.swift */; };
+		A12C77AE2862C7FE00D8C648 /* ChaseGameBoardInitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C77AD2862C7FE00D8C648 /* ChaseGameBoardInitTests.swift */; };
+		A12C77B02862C86200D8C648 /* ChaseGameBoardMoveTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C77AF2862C86200D8C648 /* ChaseGameBoardMoveTest.swift */; };
+		A1803AF22869675600B14408 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1803AF12869675600B14408 /* BoardView.swift */; };
+		A1803AF628696A9A00B14408 /* BoardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1803AF528696A9A00B14408 /* BoardItemView.swift */; };
+		A1803AF828696CD700B14408 /* BoardItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1803AF728696CD700B14408 /* BoardItemView.xib */; };
+		A1803AFC28697CB900B14408 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1803AFB28697CB900B14408 /* BoardViewController.swift */; };
+		A1803B0B28698AD700B14408 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1803B0A28698AD700B14408 /* UIColor+hex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A114C0FE2863D25F00F23A7C /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		A12C774A28604A6900D8C648 /* ChassGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChassGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12C774D28604A6900D8C648 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A12C774F28604A6900D8C648 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A12C775128604A6900D8C648 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A12C775428604A6900D8C648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A12C775728604A6900D8C648 /* ChassGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChassGame.xcdatamodel; sourceTree = "<group>"; };
 		A12C775928604A6B00D8C648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,9 +71,18 @@
 		A12C778228604B3B00D8C648 /* Pawn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pawn.swift; sourceTree = "<group>"; };
 		A12C778428604BEA00D8C648 /* Piece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piece.swift; sourceTree = "<group>"; };
 		A12C778728604D3F00D8C648 /* Bishop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bishop.swift; sourceTree = "<group>"; };
-		A12C778928604D4700D8C648 /* Luke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Luke.swift; sourceTree = "<group>"; };
+		A12C778928604D4700D8C648 /* Rook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rook.swift; sourceTree = "<group>"; };
 		A12C778B286086A400D8C648 /* Knight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knight.swift; sourceTree = "<group>"; };
 		A12C778D286086AE00D8C648 /* Queen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queen.swift; sourceTree = "<group>"; };
+		A12C779C2861372400D8C648 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		A12C77AB28613E1600D8C648 /* GameError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameError.swift; sourceTree = "<group>"; };
+		A12C77AD2862C7FE00D8C648 /* ChaseGameBoardInitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaseGameBoardInitTests.swift; sourceTree = "<group>"; };
+		A12C77AF2862C86200D8C648 /* ChaseGameBoardMoveTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaseGameBoardMoveTest.swift; sourceTree = "<group>"; };
+		A1803AF12869675600B14408 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		A1803AF528696A9A00B14408 /* BoardItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardItemView.swift; sourceTree = "<group>"; };
+		A1803AF728696CD700B14408 /* BoardItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoardItemView.xib; sourceTree = "<group>"; };
+		A1803AFB28697CB900B14408 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		A1803B0A28698AD700B14408 /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,14 +134,16 @@
 			isa = PBXGroup;
 			children = (
 				A12C778628604C8000D8C648 /* Model */,
+				A1803AF02869674600B14408 /* View */,
 				A12C774D28604A6900D8C648 /* AppDelegate.swift */,
 				A12C774F28604A6900D8C648 /* SceneDelegate.swift */,
-				A12C775128604A6900D8C648 /* ViewController.swift */,
+				A1803AFB28697CB900B14408 /* BoardViewController.swift */,
 				A12C775328604A6900D8C648 /* Main.storyboard */,
 				A12C775928604A6B00D8C648 /* Assets.xcassets */,
 				A12C775B28604A6B00D8C648 /* LaunchScreen.storyboard */,
 				A12C775E28604A6B00D8C648 /* Info.plist */,
 				A12C775628604A6900D8C648 /* ChassGame.xcdatamodeld */,
+				A1803B0A28698AD700B14408 /* UIColor+hex.swift */,
 			);
 			path = ChassGame;
 			sourceTree = "<group>";
@@ -132,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				A12C776728604A6B00D8C648 /* ChassGameTests.swift */,
+				A12C77AD2862C7FE00D8C648 /* ChaseGameBoardInitTests.swift */,
+				A12C77AF2862C86200D8C648 /* ChaseGameBoardMoveTest.swift */,
 			);
 			path = ChassGameTests;
 			sourceTree = "<group>";
@@ -152,11 +174,24 @@
 				A12C778428604BEA00D8C648 /* Piece.swift */,
 				A12C778228604B3B00D8C648 /* Pawn.swift */,
 				A12C778728604D3F00D8C648 /* Bishop.swift */,
-				A12C778928604D4700D8C648 /* Luke.swift */,
+				A12C778928604D4700D8C648 /* Rook.swift */,
 				A12C778B286086A400D8C648 /* Knight.swift */,
 				A12C778D286086AE00D8C648 /* Queen.swift */,
+				A12C779C2861372400D8C648 /* Position.swift */,
+				A12C77AB28613E1600D8C648 /* GameError.swift */,
+				A114C0FE2863D25F00F23A7C /* Route.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A1803AF02869674600B14408 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1803AF12869675600B14408 /* BoardView.swift */,
+				A1803AF528696A9A00B14408 /* BoardItemView.swift */,
+				A1803AF728696CD700B14408 /* BoardItemView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A12C775D28604A6B00D8C648 /* LaunchScreen.storyboard in Resources */,
+				A1803AF828696CD700B14408 /* BoardItemView.xib in Resources */,
 				A12C775A28604A6B00D8C648 /* Assets.xcassets in Resources */,
 				A12C775528604A6900D8C648 /* Main.storyboard in Resources */,
 			);
@@ -290,17 +326,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A12C775228604A6900D8C648 /* ViewController.swift in Sources */,
 				A12C778528604BEA00D8C648 /* Piece.swift in Sources */,
-				A12C778A28604D4700D8C648 /* Luke.swift in Sources */,
+				A12C779D2861372400D8C648 /* Position.swift in Sources */,
+				A12C77AC28613E1600D8C648 /* GameError.swift in Sources */,
+				A12C778A28604D4700D8C648 /* Rook.swift in Sources */,
 				A12C778E286086AE00D8C648 /* Queen.swift in Sources */,
 				A12C778328604B3B00D8C648 /* Pawn.swift in Sources */,
 				A12C778C286086A400D8C648 /* Knight.swift in Sources */,
 				A12C774E28604A6900D8C648 /* AppDelegate.swift in Sources */,
+				A114C0FF2863D25F00F23A7C /* Route.swift in Sources */,
 				A12C778828604D3F00D8C648 /* Bishop.swift in Sources */,
+				A1803AF628696A9A00B14408 /* BoardItemView.swift in Sources */,
 				A12C778128604B1300D8C648 /* Board.swift in Sources */,
+				A1803AF22869675600B14408 /* BoardView.swift in Sources */,
 				A12C775828604A6900D8C648 /* ChassGame.xcdatamodeld in Sources */,
+				A1803B0B28698AD700B14408 /* UIColor+hex.swift in Sources */,
 				A12C775028604A6900D8C648 /* SceneDelegate.swift in Sources */,
+				A1803AFC28697CB900B14408 /* BoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +351,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A12C776828604A6B00D8C648 /* ChassGameTests.swift in Sources */,
+				A12C77B02862C86200D8C648 /* ChaseGameBoardMoveTest.swift in Sources */,
+				A12C77AE2862C7FE00D8C648 /* ChaseGameBoardInitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

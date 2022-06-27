@@ -14,5 +14,18 @@ import Foundation
  */
 
 class Knight: Piece {
+    override var moveRuleSet: [StepRule] {
+        // 전진 방향 : black 은 아래로, white는 위로
+        let stepY = (self.color == .black) ? 1 : -1
 
+        // step1 : 전진 1칸
+        let step1 = Step(x: 0, y: stepY)
+
+        // step2 : 대각선1칸 - 대각선은 전진하는 방향의 대각선만 인가?
+        let routes = [
+            StepRule(steps: [step1, Step(x: 1, y: stepY)], repetable: false),
+            StepRule(steps: [step1, Step(x: -1, y: stepY)], repetable: false)
+        ]
+        return routes
+    }
 }
