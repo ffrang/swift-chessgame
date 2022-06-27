@@ -6,9 +6,9 @@
 //
 
 import UIKit
+import Combine
 
 class BoardView: UIView {
-    
     var itemViews: [[BoardItemView]] = []
     var board: Board? {
         didSet {
@@ -16,7 +16,7 @@ class BoardView: UIView {
         }
     }
 
-    public var didTap: ((_ position: Position, _ piece: Piece?) -> Void)?
+    public let tapEventSubject = PassthroughSubject<Position, Never>()
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -36,8 +36,8 @@ class BoardView: UIView {
                     itemView.bgColor = bgColor
                     itemView.position.x = x
                     itemView.position.y = y
-                    itemView.didTap = { [weak self] (position, piece) in
-                        self?.didTap?(position, piece)
+                    itemView.didTap = { [weak self] (position) in
+                        self?.tapEventSubject.send(position)
                     }
                     rank.append(itemView)
                     self.addSubview(itemView)

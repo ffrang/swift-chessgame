@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Combine
+
 /**
  Board는 8x8 (가로 rank x 세로 file) 크기 체스판에 체스말(Piece) 존재 여부를 관리한다.
 
@@ -40,6 +42,7 @@ import Foundation
 
 class Board {
     var positions: [[Piece?]] = []
+    public let updateSubject = PassthroughSubject<Void, Never>()
 
     init() {
         let positionMap = [
@@ -164,6 +167,7 @@ extension Board {
 
         currentPiece.position.x = to.x
         currentPiece.position.y = to.y
+        updateSubject.send()
 
         display()
         printScore()

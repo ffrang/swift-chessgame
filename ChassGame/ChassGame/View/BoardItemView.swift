@@ -26,7 +26,7 @@ class BoardItemView: UIView {
     @IBOutlet weak var button: UIButton!
     var position: Position = Position(x: 0, y: 0)!
 
-    public var didTap: ((_ position: Position, _ piece: Piece?) -> Void)?
+    public var didTap: ((_ position: Position) -> Void)?
 
     var bgColor: BoardBGColor = .white {
         didSet {
@@ -75,7 +75,7 @@ class BoardItemView: UIView {
     }
 
     @IBAction func tap(_ sender: Any) {
-        self.didTap?(position, piece)
+        self.didTap?(position)
     }
 }
 

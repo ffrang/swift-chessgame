@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import Combine
 
 class BoardViewController: UIViewController {
     @IBOutlet weak var boardView: BoardView!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var turnLabel: UILabel!
+
+    private var subscriptions = Set<AnyCancellable>()
 
     var board: Board = Board()
     var inputStart: Position?
@@ -25,10 +28,8 @@ class BoardViewController: UIViewController {
         super.viewDidLoad()
         turn = .white
         boardView.board = self.board
-        boardView.didTap = { [weak self] (position, piece) in
-            self?.addInput(position: position, piece: piece)
-        }
         showScore()
+        addSubscription()
     }
 
     override func viewDidLayoutSubviews() {
@@ -36,7 +37,22 @@ class BoardViewController: UIViewController {
         boardView.reloadItemViewsLayout()
     }
 
-    func addInput(position: Position, piece: Piece?) {
+    private func addSubscription() {
+        // 입력
+        boardView.tapEventSubject
+            .sink { [weak self] position in
+                self?.addInput(position: position)
+            }.store(in: &subscriptions)
+
+        // board 업데이트
+        board.updateSubject
+            .sink { [weak self] in
+                self?.boardView.board = self?.board
+                self?.showScore()
+            }.store(in: &subscriptions)
+    }
+
+    func addInput(position: Position) {
         if inputStart != nil && inputEnd != nil {
             resetInputs()
         }
@@ -63,7 +79,8 @@ class BoardViewController: UIViewController {
             }
 
             inputStart = position
-            boardView.board = self.board
+
+            // 해당 piece 가 선택됨, 선택가능한 영역 표시
             boardView.pick(at: position, movablePositions: board.movablePositions(of: piece))
             return
         }
@@ -77,8 +94,6 @@ class BoardViewController: UIViewController {
 
             // move
             board.move(from: inputStart, to: position)
-            boardView.board = board
-            showScore()
 
             resetInputs()
             changeTurn()
