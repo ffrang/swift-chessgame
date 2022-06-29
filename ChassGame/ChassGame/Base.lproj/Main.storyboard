@@ -1,24 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Board View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BoardViewController" customModule="ChassGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="체스게임" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5S-pT-qTu">
+                                <rect key="frame" x="20" y="73" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o01-Uj-Xt7">
+                                <rect key="frame" x="20" y="134" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zmv-yo-gU0" customClass="BoardView" customModule="ChassGame" customModuleProvider="target">
+                                <rect key="frame" x="20" y="174" width="374" height="374"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zmv-yo-gU0" secondAttribute="height" multiplier="374:374" id="Rfx-Mo-OzS"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teY-yg-4XU">
+                                <rect key="frame" x="20" y="568" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o01-Uj-Xt7" secondAttribute="trailing" constant="20" id="1eZ-h3-LQb"/>
+                            <constraint firstItem="Zmv-yo-gU0" firstAttribute="width" secondItem="Zmv-yo-gU0" secondAttribute="height" multiplier="374:374" id="59G-Kd-40H"/>
+                            <constraint firstItem="teY-yg-4XU" firstAttribute="top" secondItem="Zmv-yo-gU0" secondAttribute="bottom" constant="20" id="9Te-IQ-nNo"/>
+                            <constraint firstItem="teY-yg-4XU" firstAttribute="top" secondItem="Zmv-yo-gU0" secondAttribute="bottom" constant="20" id="CPd-AI-6yg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zmv-yo-gU0" secondAttribute="trailing" constant="20" id="QBD-QW-chg"/>
+                            <constraint firstItem="Y5S-pT-qTu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="QpD-OA-it3"/>
+                            <constraint firstItem="Y5S-pT-qTu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RSS-f1-6ej"/>
+                            <constraint firstItem="teY-yg-4XU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aRN-vK-9gx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="teY-yg-4XU" secondAttribute="trailing" constant="20" id="igF-Uu-lTK"/>
+                            <constraint firstItem="Zmv-yo-gU0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="lvb-go-Jkx"/>
+                            <constraint firstItem="o01-Uj-Xt7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="nxb-bO-Wbo"/>
+                            <constraint firstItem="o01-Uj-Xt7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rte-AT-ThW"/>
+                            <constraint firstItem="Zmv-yo-gU0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="u76-NY-Cwf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y5S-pT-qTu" secondAttribute="trailing" constant="20" id="xnN-a5-hVD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="boardView" destination="Zmv-yo-gU0" id="pJD-Co-azI"/>
+                        <outlet property="scoreLabel" destination="teY-yg-4XU" id="W7Z-x9-gky"/>
+                        <outlet property="turnLabel" destination="o01-Uj-Xt7" id="8th-vh-bg7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-6" y="94"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

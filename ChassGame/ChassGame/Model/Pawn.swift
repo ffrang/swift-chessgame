@@ -14,5 +14,12 @@ import Foundation
  */
 
 class Pawn: Piece {
-    
+    override var moveRuleSet: [StepRule] {
+        // 전진 방향 : black 은 아래로, white는 위로
+        let stepY = (self.color == .black) ? 1 : -1
+        let routes = [
+            StepRule(steps: [Step(x: 0, y: stepY)], repetable: false)
+        ]
+        return routes
+    }
 }
