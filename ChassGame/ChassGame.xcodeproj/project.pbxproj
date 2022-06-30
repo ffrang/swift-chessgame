@@ -28,6 +28,7 @@
 		A12C77AC28613E1600D8C648 /* GameError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C77AB28613E1600D8C648 /* GameError.swift */; };
 		A12C77AE2862C7FE00D8C648 /* ChaseGameBoardInitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C77AD2862C7FE00D8C648 /* ChaseGameBoardInitTests.swift */; };
 		A12C77B02862C86200D8C648 /* ChaseGameBoardMoveTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C77AF2862C86200D8C648 /* ChaseGameBoardMoveTest.swift */; };
+		A16D75A8286D59AC0024E16B /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16D75A7286D59AC0024E16B /* BoardViewModel.swift */; };
 		A1803AF22869675600B14408 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1803AF12869675600B14408 /* BoardView.swift */; };
 		A1803AF628696A9A00B14408 /* BoardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1803AF528696A9A00B14408 /* BoardItemView.swift */; };
 		A1803AF828696CD700B14408 /* BoardItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1803AF728696CD700B14408 /* BoardItemView.xib */; };
@@ -78,6 +79,7 @@
 		A12C77AB28613E1600D8C648 /* GameError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameError.swift; sourceTree = "<group>"; };
 		A12C77AD2862C7FE00D8C648 /* ChaseGameBoardInitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaseGameBoardInitTests.swift; sourceTree = "<group>"; };
 		A12C77AF2862C86200D8C648 /* ChaseGameBoardMoveTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaseGameBoardMoveTest.swift; sourceTree = "<group>"; };
+		A16D75A7286D59AC0024E16B /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
 		A1803AF12869675600B14408 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		A1803AF528696A9A00B14408 /* BoardItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardItemView.swift; sourceTree = "<group>"; };
 		A1803AF728696CD700B14408 /* BoardItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoardItemView.xib; sourceTree = "<group>"; };
@@ -134,10 +136,10 @@
 			isa = PBXGroup;
 			children = (
 				A12C778628604C8000D8C648 /* Model */,
+				A16D75A6286D599C0024E16B /* ViewModel */,
 				A1803AF02869674600B14408 /* View */,
 				A12C774D28604A6900D8C648 /* AppDelegate.swift */,
 				A12C774F28604A6900D8C648 /* SceneDelegate.swift */,
-				A1803AFB28697CB900B14408 /* BoardViewController.swift */,
 				A12C775328604A6900D8C648 /* Main.storyboard */,
 				A12C775928604A6B00D8C648 /* Assets.xcassets */,
 				A12C775B28604A6B00D8C648 /* LaunchScreen.storyboard */,
@@ -184,9 +186,18 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A16D75A6286D599C0024E16B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A16D75A7286D59AC0024E16B /* BoardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		A1803AF02869674600B14408 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A1803AFB28697CB900B14408 /* BoardViewController.swift */,
 				A1803AF12869675600B14408 /* BoardView.swift */,
 				A1803AF528696A9A00B14408 /* BoardItemView.swift */,
 				A1803AF728696CD700B14408 /* BoardItemView.xib */,
@@ -331,6 +342,7 @@
 				A12C77AC28613E1600D8C648 /* GameError.swift in Sources */,
 				A12C778A28604D4700D8C648 /* Rook.swift in Sources */,
 				A12C778E286086AE00D8C648 /* Queen.swift in Sources */,
+				A16D75A8286D59AC0024E16B /* BoardViewModel.swift in Sources */,
 				A12C778328604B3B00D8C648 /* Pawn.swift in Sources */,
 				A12C778C286086A400D8C648 /* Knight.swift in Sources */,
 				A12C774E28604A6900D8C648 /* AppDelegate.swift in Sources */,
