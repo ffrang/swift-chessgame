@@ -10,7 +10,7 @@ import Combine
 
 class BoardView: UIView {
     var itemViews: [[BoardItemView]] = []
-    var board: Board? {
+    var positions: [[Piece?]]? {
         didSet {
             showBoard()
         }
@@ -65,12 +65,12 @@ class BoardView: UIView {
     }
 
     func showBoard() {
-        guard let board = board else {
+        guard let positions = self.positions else {
             makeItemViews()
             return
         }
 
-        for (i, rank) in board.positions.enumerated() {
+        for (i, rank) in positions.enumerated() {
             for (j, piece) in rank.enumerated() {
                 let itemView = itemViews[i][j]
                 itemView.piece = piece
