@@ -215,32 +215,39 @@ extension Board {
 
                 // 경로 유효성 체크 - 경로에 같은 색 piece가 있는 경우 이동불가
                 // 예외) canStopOnlyLastPostion == true 인 경우, 중간 step에서 색구분없이 piece가 있으면 이동 불가
-                guard isValidMove(piece: piece, to: toPosition, checkColor: needCheckColor) else { break }
+                var isValidMove = false
+                var needStop = false
 
-                if route.canStopOnlyLastPostion {
-                    if isLastPosition {
+                if let toPiece = self.piece(at: toPosition) {
+                    needStop = true
+                    if needCheckColor && piece.color != toPiece.color {
+                        isValidMove = true
+                    } else {
+                        isValidMove = false
+                    }
+
+                } else {
+                    isValidMove = true
+                }
+
+                if isValidMove {
+                    if route.canStopOnlyLastPostion {
+                        if isLastPosition {
+                            movablePositions.append(toPosition)
+                        }
+                    } else {
                         movablePositions.append(toPosition)
                     }
-                } else {
-                    movablePositions.append(toPosition)
+                }
+
+                if !isValidMove || needStop {
+                    break
                 }
             }
         }
 
         print("= can move positions: ", movablePositions)
         return movablePositions
-    }
-
-    func isValidMove(piece: Piece, to: Position, checkColor: Bool) -> Bool {
-        guard let toPiece = self.piece(at: to) else {
-            return true
-        }
-
-        if checkColor && piece.color != toPiece.color {
-            return true
-        } else {
-            return false
-        }
     }
 
     func piece(at: Position) -> Piece? {
